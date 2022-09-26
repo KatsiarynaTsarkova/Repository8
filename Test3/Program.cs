@@ -20,10 +20,13 @@ void PrintArray( int[,] matr)
 }
 PrintArray(array);
     double[] sred = new double[4]; 
-    double sum=0; 
-    double avg = 0;
+    //double sum=0; 
+    //double avg = 0;
     for (int j = 0; j < 4; j++)
             {
+              double sum=0; 
+              double avg = 0;
+
                 for (int i = 0; i < 3; i++)
                 {
                    sum += array[i, j]; //сумма эл-тов
@@ -34,6 +37,6 @@ PrintArray(array);
             }  
    Console.WriteLine("average: ");
             for (int j = 0; j < 4; j++) // цикл по столбцам
-               { 
-                Console.Write(sred[j] + " ");
-                } // Вывод среднего арифм каждого столбца
+              { 
+                Console.Write($"{sred[j]}  ");
+               } // Вывод среднего арифм каждого столбца
